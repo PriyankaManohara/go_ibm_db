@@ -8,7 +8,8 @@
 package api
 
 import "os"
-os.Setenv("CGO_LDFLAGS","-L$DB2HOME/lib")
+
+os.Setenv("CGO_LDFLAGS","-L$/home/pmanoharan/go/src/github.com/ibmdb/go_ibm_db/installer/clidriver/lib")
 // #cgo darwin LDFLAGS: -ldb2
 // #cgo linux LDFLAGS: -ldb2
 // #include <sqlcli1.h>
