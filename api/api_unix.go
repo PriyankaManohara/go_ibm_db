@@ -7,6 +7,8 @@
 
 package api
 
+import "os"
+os.Setenv("CGO_LDFLAGS","-L$DB2HOME/lib")
 // #cgo darwin LDFLAGS: -ldb2
 // #cgo linux LDFLAGS: -ldb2
 // #include <sqlcli1.h>
